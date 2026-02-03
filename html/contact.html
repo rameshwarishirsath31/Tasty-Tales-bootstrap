@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"> <b>🍽️ Tasty Tales</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="categories.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="veg.html">Veg</a></li>
+                            <li><a class="dropdown-item" href="nveg.html">Non-Veg</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="deit.html">Dietary </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact_Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2 ">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal"> Login </button>
+
+
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signModal"> Sign_Up </button>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login to Tasty Tales </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" placeholder="Enter Email">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Login</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Sign Modal -->
+    <div class="modal fade" id="signModal" tabindex="-1" aria-labelledby="signModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signModalLabel">Sign_Up to Tasty Tales</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" placeholder="Enter Email">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Contact Us 🍽️</h2>
+        <p class="text-center text-muted mb-5">
+            Have a question, feedback, or recipe idea? We’d love to hear from you!
+        </p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-5">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number (Optional)</label>
+                        <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-control" placeholder="Feedback / Recipe / Query" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-danger">
+                            Send Message 📩
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer class="container my-4 me-2">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2017–2026 Tasty Tales , Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
